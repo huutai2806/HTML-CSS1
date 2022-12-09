@@ -50,6 +50,12 @@ h1, h2, h3, h4, h5, h6
     line-height: 1.6em;
     font-family: 'Work Sans', sans-serif;
 }
+img 
+{
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
 .clearfix::after 
 {
     display: block;
@@ -334,6 +340,19 @@ a:visited
     padding-right: calc(var(--bs-gutter-x) * .5);
     padding-left: calc(var(--bs-gutter-x) * .5);
     margin-top: var(--bs-gutter-y);
+}.col-lg-6 
+{
+    flex: 0 0 auto;
+    width: 50%;
+}
+.about-image 
+{
+    display: flex;
+    margin-left: -90px;
+}
+.mb-0 
+{
+    margin-bottom: 0!important;
 }
 .cta-content .title 
 {
@@ -441,7 +460,7 @@ a:visited
 {
     position: relative;
     border: 1px solid #ebebeb;
-    border-bottom: 0;
+    border-bottom: 0px;
 }
 .g-0, .gy-0 
 {
@@ -519,9 +538,52 @@ h5
 {
     border-right: none;
 }
+
 .project-section 
 {
     position: relative;
     overflow: hidden;
     padding: 20px 0px 0px;
+}
+.project-section .sec-title .cases{
+	position:relative;
+	color:#000000;
+	font-size:14px;
+	margin-top:60px;
+	display:inline-block;
+	text-transform:uppercase;
+	transition:all 500ms ease;
+	-moz-transition:all 500ms ease;
+	-webkit-transition:all 500ms ease;
+	-ms-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+}
+.project-section .sec-title .cases span
+{
+	position:relative;
+	font-size:12px;
+}
+.project-section .sec-title .cases:hover
+{
+	color:#2c724f;
+}
+
+.project-section .outer-container
+{
+	position:relative;
+}
+
+.project-section .column
+{
+	padding:0px 2px;
+}
+
+.project-section .column .row
+{
+	margin:0px -2px;
+}
+
+.project-section .inner-column
+{
+	padding:0px 2px;
 }
